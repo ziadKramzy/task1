@@ -1,0 +1,801 @@
+
+:root{
+  --primary-color:#0a8c7e;
+  --secondary-color: #f7f6f6;
+  --paragraph-color: #f2f3f2cb;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter";
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+font-weight: bold;
+}
+
+/* nav css */
+.myNav{
+position: fixed;
+color: #c1e9e5;
+font-size: 18px;
+font-weight: 600;
+display: flex;
+flex-direction: row;
+gap: 10px;
+width: 100vw;
+height: fit-content;
+padding: 5px;
+justify-content: space-around;
+background-color: #0b9586;
+z-index: 1;
+}
+.myNav ul{
+list-style-type: none;
+display: inline-flex;
+gap: 60px;
+margin-top: 20px;
+margin-right:80px;
+}
+.myNav ul li{
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.myNav img{
+    height: fit-content;
+    margin-top: 5px;
+    width: 160px;
+    padding: 10px;
+}
+
+.myNav ul :hover {
+color:var(--secondary-color);
+background-color: var(--primary-color);
+box-shadow: 0 4px 4px #076b60;
+transition: 0.25s ease;
+border-radius: 5px;
+}
+
+
+/* headercss */
+.myHeader{
+    z-index: 1;
+    padding-top: 100px;
+    background-image: url("./assets/solar-panels-meadow\ 1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 640px;
+    width: 100%;
+    color: var(--secondary-color);
+    
+}
+
+.progress-container {
+    padding-bottom: 40px;
+    display: flex;
+    align-items: center;
+    width: 300px; 
+  }
+  
+  .progress-number {
+    font-size: 16px;
+    margin: 0 10px;
+    color: var(--secondary-color);
+  }
+  
+  .progress-bar {
+    flex-grow: 1;
+    height: 3px;
+    background-color: #a3a2a2;
+    position: relative;
+  }
+  
+  .progress {
+    width: 30%; 
+    height: 100%;
+    background-color: var(--secondary-color);
+  }
+  
+  .heroDiv{
+    position: relative;
+    font-size: 22px;
+   padding: 86px;
+   margin-left: 40px;
+   width: 50%;
+   height: 100%;
+  }
+
+  .heroDiv p{
+    font-weight: 600;
+    padding: 10px;
+    color: var(--paragraph-color);
+  }
+.callBtn{
+  margin-top:20px;
+    border-radius: 20px;
+    border: none;
+    padding: 4px;
+    height: 40px;
+    width: 160px;
+    background-color: #0b9586;
+    color: #ccc;
+    font-weight: bold;
+}
+.requestBtn{
+  margin-top:20px;
+    border-radius: 20px;
+    border: none;
+    padding: 4px;
+    height: 40px;
+    width: 160px;
+    background-color: #ffbb1c;
+    color: #3b3c14a1;
+    font-weight: bold;
+}
+.callBtn:hover{
+box-shadow:1px 5px 5px black;
+transition: 0.25s ease;
+color: #ccf8f3;
+}
+.requestBtn:hover{
+box-shadow:1px 5px 5px black;
+transition: 0.25s ease;
+color: #000000c4
+}
+
+.solar-container{
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: fit-content;
+  width: auto;
+}
+.infoDiv{
+  flex: 2;
+}
+
+.infoDiv p{
+  color: #475467;
+  font-weight: 400;
+  font-size: 16px;
+}
+.infoDiv ul{
+list-style-type: none;
+padding: 0px;
+margin-top: 56px;
+}
+.infoDiv li{
+  padding: 5px;
+  margin: 5px;
+}
+.infoDiv span{
+  color: #a8d074;
+}
+.imgDiv{
+  flex: 1;
+}
+.imgDiv img{
+  height: 95%;
+  width: 95%;
+}
+.overIcon{
+ background-image: url("./assets//Frame\ 7.png");
+ background-position: center;
+ background-size: contain;
+ background-repeat: no-repeat;
+  position: absolute;
+  width: 266px;
+  height: 186px;
+  border-radius: 12px;
+  right: 0;
+  margin-top: 260px;
+  margin-right: 24%;
+}
+
+.call-section{
+  background-image: url("./assets/8116\ 1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.call-info{
+color: #ffffff;
+padding: 100px;
+height: 250px;
+font-size: 20px;
+}
+.call-info p{
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.kits-container{
+  padding: 15px;
+  margin: 45px;
+}
+.solarHeader{
+  text-align: center;padding: 20px;
+}
+.solarHeader p{
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.kitsBoxes{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.kitsBoxes p{
+  color: #475467;
+  font-weight: 400;
+  font-size: 16px;
+}
+.kitsBoxes span{
+  color: #3cab90;
+}
+
+
+
+
+.repairs-section{
+  padding: 90px;
+  background-image: url("./assets/8116\ 1\ \(1\).png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: auto;
+  height: 100%;
+}
+.repairs-info{
+text-align: center;
+padding: 30px;
+width:50%;
+height: 50%;
+border-radius: 10px;
+margin: auto;
+color: #ffffff;
+background-color: rgba(0, 0, 0, 0.5);
+backdrop-filter: blur(2px);
+}
+.repairs-info p{
+  color: #e2edfb;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+
+
+
+
+
+.energy-section{
+  margin: 0 auto;
+  padding: 60px;
+  display: flex;
+  justify-content: space-around;
+}
+.energy-section p{
+  font-weight: 400;
+  font-size: 16px;
+  color: #475467;
+  padding: 5px;
+}
+
+
+.energy-header{
+  width: 25%;
+}
+.energy-header p{
+  width: 100%;
+}
+
+.fa-bolt{
+  font-size: 24px;
+  color: #ffffff;
+  background-color: var(--primary-color);
+  padding: 16px;
+  border-radius: 12px;
+  width: fit-content;
+}
+.energy-icon{
+background-color: #dae1ec;
+width: max-content;
+padding: 8px;
+border-radius: 10px;
+}
+.energy-flex{
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.energy-item{
+width: fit-content; 
+height: fit-content;
+padding: 12px;
+flex: 1 1 30%;
+border: 2px solid #3CAB90;
+border-radius: 12px;
+}
+.item{
+  padding: 5px;
+}
+.energy-item img{
+  width: 100%;
+  height: 50%;
+  border-radius: 12px;
+}
+
+.energy-item span{
+  color: var(--primary-color);
+}
+.energy-item a{
+text-decoration: underline;
+}
+.values-section{
+  text-align: center;
+  padding: 20px;
+}
+.values-flexbox{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: space-around;
+  padding: 20px;
+}
+.values-items{
+  border: 2px solid #3CAB90;
+  border-radius: 12px;
+  width: 25%;
+}
+.valItem{
+  text-align: left;
+  padding: 24px;
+}
+.values-section p{
+font-weight: 400;
+font-size: 16px;
+color: #475467;
+}
+.fa-hand-holding , .fa-circle-dollar-to-slot , .fa-leaf{
+  font-size: 40px;
+  color: #3CAB90;
+
+}
+
+.feedback-section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 60px;
+}
+.feedback-section h3{
+  color: #3CAB90;
+}
+.feedback-section p{
+  color: #475467;
+}
+.left-section{
+  width: fit-content;
+}
+.right-section{
+  padding: 64px;
+  width: 40%;
+  background-color: #3CAB900F;
+  border-radius: 12px;
+}
+.profile-info{
+  margin-left: 40px;
+  padding: 40px;
+}
+
+
+.right-section img{
+  position: absolute;
+  padding-top: 36px;
+
+}
+.icons-arrow{
+  margin-left: 120px;
+}
+
+.right-section span {
+  color: #475467;
+}
+
+.fa-circle-left , .fa-circle-right{
+  font-size: 32px;
+  padding: 5px;
+}
+.fa-quote-left{
+  color: #3CAB90;
+  font-size: 68px;
+}
+
+.dot-container {
+  display: flex;
+  justify-content: end;
+}
+
+.dots {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+.dot.active {
+  background-color: #000; 
+}
+
+.footer{
+  background-color: #283646;
+   padding: 40px;
+   color: #ffffff;
+  font-weight: 400;
+  font-size: 16px;
+}
+.footer-flex{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+
+}
+.left-footer{
+  padding: 30px;
+  flex: 0.6;
+}
+.left-footer img{
+  width: 186px;
+  height: 52px;
+  margin-bottom: 10px;
+}
+.left-footer ul{
+  padding: 0;
+  margin-top: 20px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.right-footer{
+  margin-top: 20px;
+padding: 30px;
+flex: 0.26;
+}
+
+.right-footer input{
+  color: #ffffff;
+  border-radius: 20px;
+  height: 28px;
+  width: 220px;
+  background-color: transparent;
+  border: 1px solid #B3BDC7;
+  padding: 5px;
+  padding-left: 20px;
+}
+.right-footer button{
+  position: absolute;
+  right: 7%;
+  border-radius: 20px;
+  border: none;
+  height: 40px;
+  width: 156px;
+  background-color: #ffbb1c;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.bottom-footer{
+  width: 100%;
+  padding: 20px;
+  display:flex;
+  flex-direction: row;
+  color: #92989F;
+  justify-content: space-around;
+}
+.bottom-left{
+  flex: 0.6;
+}
+.bottom-right{
+  flex: 0.2;
+}
+
+.footer hr{
+  width: 92%;
+  color: #92989F;
+}
+
+.right-footer button:hover{
+  box-shadow:1px 2px 2px black;
+transition: 0.25s ease;
+right: 6%;
+color: #000000c4
+}
+
+
+
+
+
+
+
+/* Base Styles (Applies to all screen sizes) */
+/* ...Your current CSS goes here... */
+
+/* Mobile Styles (Small devices: 0px - 600px) */
+@media only screen and (max-width: 600px) {
+ body{
+  width: fit-content;
+  height: fit-content;
+ }
+  .myNav {
+    padding: 0px;
+    height: fit-content;
+    justify-content: space-around;
+    overflow: hidden;
+    width: 100%;
+  }
+  .myNav ul {
+    display:flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 1rem;
+  }
+.myNav p{
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  font-size: 1rem;
+}
+
+  
+
+  .myNav img {
+    flex: 1fr;
+    width: 50vw;
+    height: 8vh;
+  }
+
+  .heroDiv {
+    font-size: 1rem;
+    width: 100vw;
+    height: 100vh;
+    padding: 80px;
+    margin-left: 0;
+
+  }
+  .heroDiv p{
+    width: 50vw;
+  }
+
+
+  .solar-container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 10px;
+  }
+ .imgDiv{
+  width: 70vw;;
+  margin-left: 20vw;
+ }
+
+ .overIcon{
+  transform: translate(60% ,100%);
+ }
+
+ .call-section{
+  background-size: cover;
+  width: 100%;
+  height: 80vh;
+
+ }
+ 
+
+  .kitsBoxes {
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+  }
+
+  .repairs-info{
+    width: 50vw;
+  }
+
+  .energy-section {
+    flex-direction: column;
+    gap: 20px;
+    width: 60vw;
+  }
+ .energy-header{
+  width: 60vw;
+ }
+  .energy-item {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+    
+  }
+  .item{
+    width: 50vw;
+  }
+
+.values-flexbox{
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+}
+
+.values-items{
+  width: 60vw;
+}
+  .feedback-section {
+    flex-direction: column;
+  }
+
+  .left-section, .right-section {
+    width: 60vw;
+  }
+  .icons-arrow{
+   position: absolute;
+   right: 0;
+   transform: translate(-90% , 50%);
+  }
+
+  .footer-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+ 
+}
+
+
+@media only screen and (min-width: 601px) and (max-width: 1480px) {
+  body{
+    width: fit-content;
+    height: fit-content;
+   }
+    .myNav {
+      padding: 0px;
+      height: fit-content;
+      justify-content: space-around;
+      overflow: hidden;
+      width: 100%;
+    }
+    .myNav ul {
+      display:flex;
+      flex-direction: column;
+      gap: 5px;
+      font-size: 1rem;
+    }
+  .myNav p{
+    position: absolute;
+    left: 20vw;
+    top: 50%;
+    font-size: 1rem;
+  }
+  
+    
+  
+    .myNav img {
+      flex: 1fr;
+      width: 30vw;
+      height: 8vh;
+    }
+  
+    .heroDiv {
+      font-size: 1rem;
+      width: 100vw;
+      height: 100vh;
+      padding: 80px;
+      margin-left: 0;
+  
+    }
+    .heroDiv p{
+      width: 50vw;
+    }
+    
+    .solar-container {
+      display: flex;
+      flex-direction: column;
+      margin: 20px;
+      padding: 10px;
+    }
+   .imgDiv{
+    width: 70vw;;
+    margin-left: 20vw;
+   }
+  
+   .overIcon{
+    transform: translate(60% ,100%);
+   }
+  
+   .call-section{
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+  
+   }
+   
+  
+    .kitsBoxes {
+      flex-direction: column;
+      width: 100vw;
+      align-items: center;
+    }
+  
+    .repairs-info{
+      width: 50vw;
+    }
+  
+    .energy-section {
+      flex-direction: column;
+      gap: 20px;
+      width: 60vw;
+    }
+   .energy-header{
+    width: 60vw;
+   }
+    .energy-item {
+      flex-basis: 100%;
+      margin-bottom: 20px;
+      
+    }
+    .item{
+      width: 50vw;
+    }
+  
+  .values-flexbox{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+  }
+  
+  .values-items{
+    width: 60vw;
+  }
+    .feedback-section {
+      flex-direction: column;
+    }
+  
+    .left-section, .right-section {
+      width: 60vw;
+    }
+    .icons-arrow{
+     position: absolute;
+     right: 0;
+     transform: translate(-90% , 50%);
+    }
+  
+    .footer-flex {
+      flex-direction: column;
+      align-items: center;
+    }
+    .right-footer button{
+transform: translate(-55%);
+    }
+}
+
